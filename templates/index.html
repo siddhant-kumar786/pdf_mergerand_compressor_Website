@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Love PDF</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h1 class="heading">PDFMingle</h1>
+        <div id="differSections">
+            <div class="one">MERGE PDF</div>
+            <div class="two">COMPRESS PDF</div>
+        </div>
+
+    </nav>
+
+    <div id="content">
+            <h1>Merge Pdf Files</h1>
+            <div id="contentLine">
+                Combine PDFs in the order you want with the easiest PDF merger available.
+            </div>
+
+            <form action="/merge" method="post" enctype="multipart/form-data">
+                <div id="labelForfilebtn">
+                    <label for="fileUpload">SELECT PDF FILE</label> 
+                </div>
+                
+                <input type="file" class="btn" name="pdfs" id="fileUpload" accept=".pdf" multiple style="display: none">
+                <input id="SubmitBtn" type="submit" value="Merge PDF" style="display: none">
+            </form>
+            
+    </div>
+    <div id="contentII">
+        <div id="sidecontainer">
+                <h1>Merge Pdf</h1> 
+                <div id="suggestion">
+                    To change the order of your PDFs, drag and drop the files as you want.
+                </div> 
+            </div>
+            <div id="SubmitLabel">
+                <label for="SubmitBtn">SUBMIT</label>  
+            </div>
+            
+    </div>
+    
+    <footer id="footerOfMerge">
+        <h2>© PDFMingle 2024 ® - Your PDF Editor</h2>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
